@@ -29,6 +29,18 @@ p {
   width: 100vw;
 }
 
+img {
+  width: 160px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.patient-img {
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  border: 1px solid black;
+}
 .patient-panel {
   background-color: blue;
   height: 70vh;
@@ -42,10 +54,10 @@ p {
   display: grid;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
 }
 
 .item-grid {
@@ -58,6 +70,14 @@ p {
   background-color: blueviolet;
   height: 50vh;
   width: 60vw;
+  color: white;
+}
+
+.dropzone-panel p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .case-box {
   width: 30%;
@@ -68,4 +88,11 @@ p {
   background-color: aqua;
   display: flex;
   flex-direction: column;
+}
+.symptom-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
 }

@@ -11,14 +11,18 @@
     <main class="game-container">
       <div class="content">
         <section class="patient-panel">
-          <img src="patient.png" alt="patient" class="patient-img" />
-          <p class="symptom-text">patient:"I feel...."</p>
+          <p class="symptom-text">
+            Patient: I fell while playing soccer and my arm hurts
+          </p>
+          <img src="images/Patient 1.jpg" alt="patient" class="patient-img" />
         </section>
         <!-- Drop Zone -->
         <section class="dropzone-panel">
-          <p>pick wisely...</p>
+          <p>Pick wisely, my health depends on you, doc!</p>
           <div class="dropzones">
-            <div class="dropzone">Drop zone 1</div>
+            <div class="dropzone" id="zone1">Drop zone 1</div>
+            <div class="dropzone" id="zone2">Drop zone 2</div>
+            <div class="dropzone" id="zone3">Drop zone 1</div>
           </div>
         </section>
       </div>
@@ -28,13 +32,69 @@
       <section class="items-panel">
         <!-- <h3>draggable items</h3> -->
 
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
-        <div class="item-grid"></div>
+        <div class="item-grid">
+          <img
+            src="images/ballon.jpg"
+            alt="ballon"
+            class="ballon"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/banana.jpg"
+            alt="banana"
+            class="banana"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/hammer.png"
+            alt="hammer"
+            class="hammer"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/ice-cream.jpg"
+            alt="ice-cream"
+            class="ice-cream"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/pill.jpg"
+            alt="pill"
+            class="pill"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/x-ray.jpg"
+            alt="x-ray"
+            class="x-ray"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            src="images/cast.jpg"
+            alt="cast"
+            class="cast"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
       </section>
     </main>
   </body>
