@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans serif;
+  text-align: center;
+  background-color: pink;
+  color: blue;
+  padding: 20px;
+}
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 18px;
+}
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.case-box {
+  width: 30%;
+  padding: 15px;
+}

@@ -3,7 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Medical Escape Room</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Medical Escape Room</h1>
+    <main class="game-container">
+      <section class="patient-panel">
+        <img src="patient.png" alt="patient" class="patient-img" />
+        <p class="symptom-text">patient:"I feel...."</p>
+      </section>
+
+      <!-- draggable -->
+
+      <section class="items-panel">
+        <h3>draggable items</h3>
+        <div class="item-grid">
+          <div class="item">X-ray 1</div>
+        </div>
+      </section>
+
+      <!-- Drop Zone -->
+      <section class="dropzone-panel">
+        <p>pick wisely...</p>
+        <div class="dropzones">
+          <div class="dropzone">Drop zone 1</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="game-container">
+      <div class="case-box">
+        <h2>case 1</h2>
+        <p>"symptom: Doc, I have....."</p>
+        <div id="drop-zone" class="drop-zone">
+          <p>Drop correct item here</p>
+        </div>
+      </div>
+    </div>
+    <p id="p1" draggable="true">This element is draggable</p>
+  <!-- </body> -->
+    -
+  </body>
 </html>
