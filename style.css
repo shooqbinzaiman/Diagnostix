@@ -1,23 +1,71 @@
 body {
-  font-family: Arial, sans serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   background-color: pink;
   color: blue;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   color: white;
   margin-bottom: 10px;
 }
+
 p {
   font-size: 18px;
 }
+
 .game-container {
-  display: flex;
-  justify-content: space-around;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
   margin-top: 20px;
+  height: 120vh;
+  width: 100vw;
+}
+
+.patient-panel {
+  background-color: blue;
+  height: 70vh;
+  width: 60vw;
+}
+
+.items-panel {
+  background-color: yellow;
+  height: 120vh;
+  width: 40vw;
+  display: grid;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.item-grid {
+  background-color: green;
+  height: 15vh;
+  width: 15vw;
+}
+
+.dropzone-panel {
+  background-color: blueviolet;
+  height: 50vh;
+  width: 60vw;
 }
 .case-box {
   width: 30%;
   padding: 15px;
+}
+
+.content {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
