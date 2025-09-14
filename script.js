@@ -1,4 +1,3 @@
-const element = document.getElementById("p1")
-element.addEventListener("dragstart", (ev) => {
-  ev.dataTransfer.setData("Text/plain", ev.target.id)
-})
+const items = document.querySelectorAll(".draggable")
+const dropzones = document.querySelectorAll(".dropzone")
+const messageBox = document.getElementById("message-box")

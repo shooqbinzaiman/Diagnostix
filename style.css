@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: pink;
-  color: blue;
+  background-color: rgb(19, 3, 123);
+  color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ p {
 }
 
 .game-container {
-  background-color: red;
+  background-color: black;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -33,22 +33,20 @@ img {
   width: 160px;
   height: 150px;
   padding: 5px;
-  border: 1px solid black;
 }
 .patient-img {
   width: 500px;
   height: 500px;
   padding: 5px;
-  border: 1px solid black;
 }
 .patient-panel {
-  background-color: blue;
+  background-color: white;
   height: 70vh;
   width: 60vw;
 }
 
 .items-panel {
-  background-color: yellow;
+  background-color: white;
   height: 120vh;
   width: 40vw;
   display: grid;
@@ -61,13 +59,15 @@ img {
 }
 
 .item-grid {
-  background-color: green;
-  height: 15vh;
-  width: 15vw;
+  background-color: white;
+  height: 26vh;
+  width: 13vw;
+  padding: 1vh;
+  border: 1px solid black;
 }
 
 .dropzone-panel {
-  background-color: blueviolet;
+  background-color: rgb(2, 2, 90);
   height: 50vh;
   width: 60vw;
   color: white;
@@ -79,6 +79,27 @@ img {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+.dropzones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dropzone {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed white;
+  border-radius: 10px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
 .case-box {
   width: 30%;
   padding: 15px;
@@ -90,9 +111,16 @@ img {
   flex-direction: column;
 }
 .symptom-text {
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: center;
+}
+.message-box {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: pink;
   text-align: center;
 }
