@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Medical Escape Room</title>
+  </head>
+  <body>
+    <h1>Medical Escape Room</h1>
+    <main class="game-container">
+      <div class="content">
+        <section class="patient-panel">
+          <img
+            src="images/pain-chest.png"
+            alt="pain-chest"
+            class="pain-chest-img"
+          />
+          <p class="symptom-text">
+            patient:I fell while playing soccer and my arm hurts" >
+          </p>
+        </section>
+        <!-- Drop Zone -->
+        <section class="dropzone-panel">
+          <p>Pick wisely, my health depends on you, doc!</p>
+          <div class="dropzones">
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+          </div>
+          <div id="message-box" class="message-box">
+            Drag an item to the correct box!
+          </div>
+        </section>
+      </div>
+
+      <!-- draggable -->
+
+      <section class="items-panel">
+        <!-- <h3>draggable items</h3> -->
+
+        <div class="item-grid">
+          <img
+            id="item-ice pack"
+            src="images/ice pack.jpg"
+            alt="ice pack"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-crutches"
+            src="images/crutches.jpg"
+            alt="crutches"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-sunglasses"
+            src="images/Sunglasses.jpg"
+            alt="Sunglasses"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-bandage"
+            src="images/bandage.jpg"
+            alt="bandage"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-chest"
+            src="images/chest.jpg"
+            alt="chest"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-infection"
+            src="images/infection.jpg"
+            alt="infection"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-steth"
+            src="images/steth.jpeg"
+            alt="steth"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
