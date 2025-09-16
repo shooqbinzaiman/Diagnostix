@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Case 3 - Chest Pain</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Case 3: Chest Pain</h1>
+    <p>
+      A 55-year-old man arrives with sudden chest pain. Which steps are
+      important
+    </p>
 
+    <main class="game-container">
+      <div>
+        <section class="patient-panel">
+          <img
+            src="images/55 pain.jpeg"
+            alt="man with chest pain"
+            class="patient-chest"
+          />
+        </section>
+
+        <section class="dropzone-panel">
+          <p>Drag the correct items here:</p>
+          <div class="dropzones">
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+          </div>
+          <div id="message-box" class="message-box">Drag an item here</div>
+        </section>
+      </div>
+
+      <section class="items-panel">
+        <div class="item-grid">
+          <img
+            id="item-pizza"
+            src="images/pizza.jpg"
+            alt="pizza"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-water"
+            src="images/water.jpg"
+            alt="water"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-soda"
+            src="images/soda.png"
+            alt="soda"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-meditating"
+            src="images/meditating.jpg"
+            alt="meditating"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-chest-xray"
+            src="images/chest-xray.jpg"
+            alt="chest-xray"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-Oxygen-Mask"
+            src="images/Oxygen-Mask.jpg"
+            alt="Oxygen-Mask"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-heart-monitor"
+            src="images/heart monitor.png"
+            alt="heart-monitor"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
