@@ -1,88 +1,126 @@
 body {
+  background-image: url(images/131.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: rgb(19, 3, 123);
   color: white;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
+
 h1 {
   color: white;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 20px 0;
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  /* transition: 0.3; */
+}
+
+button:hover {
+  background-color: darkred;
 }
 
 .game-container {
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
   margin-top: 20px;
-  height: 120vh;
-  width: 100vw;
+  width: 95vw;
+}
+
+.patient-panel {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 50vh;
+  overflow: hidden;
 }
 
 img {
-  width: 160px;
-  height: 150px;
+  width: 150px;
+  height: 140px;
   padding: 5px;
-}
-.patient-img {
-  width: 500px;
-  height: 500px;
-  padding: 5px;
-}
-.pain-chest-img {
-  width: 500px;
-  height: 500px;
-  padding: 5px;
-}
-.patient-panel {
-  background-color: white;
-  height: 70vh;
-  width: 60vw;
 }
 
 .items-panel {
   background-color: white;
-  height: 120vh;
-  width: 40vw;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  flex: 1;
   display: grid;
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* align-items: center; */
-  gap: 10px;
+  gap: 15px;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
+  min-height: 60vh;
+  justify-items: center;
 }
 
 .item-grid {
   background-color: white;
-  height: 26vh;
-  width: 13vw;
   padding: 1vh;
   border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
 }
 
 .dropzone-panel {
   background-color: rgb(2, 2, 90);
-  height: 50vh;
-  width: 60vw;
+  height: 40vh;
+  width: 55vw;
   color: white;
+  border-radius: 15px;
 }
 
 .dropzone-panel p {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .dropzones {
@@ -105,16 +143,6 @@ img {
   font-weight: bold;
 }
 
-.case-box {
-  width: 30%;
-  padding: 15px;
-}
-
-.content {
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-}
 .symptom-text {
   color: black;
   font-size: 20px;
@@ -122,6 +150,7 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .message-box {
   margin-top: 15px;
   font-size: 20px;

@@ -4,46 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Medical Escape Room</title>
+    <title>Case 1 - Soccer Injury</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Medical Escape Room</h1>
+    <h1>Case 1: Soccer Injury</h1>
+    <p>
+      A 12-year-old boy fell while playing soccer. His arm hurts badly. Choose
+      the right tools to help him.
+    </p>
+
     <main class="game-container">
-      <div class="content">
+      <div>
         <section class="patient-panel">
           <img
-            src="images/pain-chest.png"
-            alt="pain-chest"
-            class="pain-chest-img"
+            src="images/patient1.png"
+            alt="injured boy"
+            class="patient-soccer"
           />
-          <p class="symptom-text">
-            patient:I fell while playing soccer and my arm hurts" >
-          </p>
         </section>
-        <!-- Drop Zone -->
+
         <section class="dropzone-panel">
-          <p>Pick wisely, my health depends on you, doc!</p>
+          <p>Drag the correct items here:</p>
           <div class="dropzones">
             <div class="dropzone"></div>
             <div class="dropzone"></div>
             <div class="dropzone"></div>
           </div>
-          <div id="message-box" class="message-box">
-            Drag an item to the correct box!
-          </div>
+          <div id="message-box" class="message-box">Drag an item here</div>
         </section>
       </div>
 
-      <!-- draggable -->
-
       <section class="items-panel">
-        <!-- <h3>draggable items</h3> -->
-
         <div class="item-grid">
           <img
-            id="item-ice pack"
-            src="images/ice pack.jpg"
-            alt="ice pack"
+            id="item-ballon"
+            src="images/ballon2.jpg"
+            alt="ballon"
             class="draggable"
             draggable="true"
             data-answer="wrong"
@@ -51,9 +48,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-crutches"
-            src="images/crutches.jpg"
-            alt="crutches"
+            id="item-icecream"
+            src="images/icecream.jpg"
+            alt="ice-cream"
             class="draggable"
             draggable="true"
             data-answer="wrong"
@@ -61,9 +58,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-sunglasses"
-            src="images/Sunglasses.jpg"
-            alt="Sunglasses"
+            id="item-hammer"
+            src="images/hammer2.jpg"
+            alt="hammer"
             class="draggable"
             draggable="true"
             data-answer="wrong"
@@ -71,9 +68,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-bandage"
-            src="images/bandage.jpg"
-            alt="bandage"
+            id="item-lollipop"
+            src="images/lollipop.jpg"
+            alt="lollipop"
             class="draggable"
             draggable="true"
             data-answer="wrong"
@@ -81,9 +78,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-chest"
-            src="images/chest.jpg"
-            alt="chest"
+            id="item-arm-cast"
+            src="images/arm cast.jpg"
+            alt="arm-cast"
             class="draggable"
             draggable="true"
             data-answer="true"
@@ -91,9 +88,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-infection"
-            src="images/infection.jpg"
-            alt="infection"
+            id="item-xray"
+            src="images/x-ray fracture.jpg"
+            alt="x-ray"
             class="draggable"
             draggable="true"
             data-answer="true"
@@ -101,9 +98,9 @@
         </div>
         <div class="item-grid">
           <img
-            id="item-steth"
-            src="images/steth.jpeg"
-            alt="steth"
+            id="item-pill"
+            src="images/pill.jpg"
+            alt="pill"
             class="draggable"
             draggable="true"
             data-answer="true"

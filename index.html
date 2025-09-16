@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+  <audio controls autoplay>
+    <source src="audio/ambulance.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,105 +12,11 @@
   </head>
   <body>
     <h1>Medical Escape Room</h1>
-    <main class="game-container">
-      <div class="content">
-        <section class="patient-panel">
-          <img src="images/Patient 1.jpg" alt="patient" class="patient-img" />
-          <p class="symptom-text">
-            patient:I fell while playing soccer and my arm hurts" >
-          </p>
-        </section>
-        <!-- Drop Zone -->
-        <section class="dropzone-panel">
-          <p>Pick wisely, my health depends on you, doc!</p>
-          <div class="dropzones">
-            <div class="dropzone"></div>
-            <div class="dropzone"></div>
-            <div class="dropzone"></div>
-          </div>
-          <div id="message-box" class="message-box">
-            Drag an item to the correct box!
-          </div>
-        </section>
-      </div>
-
-      <!-- draggable -->
-
-      <section class="items-panel">
-        <!-- <h3>draggable items</h3> -->
-
-        <div class="item-grid">
-          <img
-            id="item-ballon"
-            src="images/ballon.jpg"
-            alt="ballon"
-            class="draggable"
-            draggable="true"
-            data-answer="wrong"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-banana"
-            src="images/banana.jpg"
-            alt="banana"
-            class="draggable"
-            draggable="true"
-            data-answer="wrong"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-hammer"
-            src="images/hammer.png"
-            alt="hammer"
-            class="draggable"
-            draggable="true"
-            data-answer="wrong"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-icecream"
-            src="images/ice-cream.jpg"
-            alt="ice-cream"
-            class="draggable"
-            draggable="true"
-            data-answer="wrong"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-pill"
-            src="images/pill.jpg"
-            alt="pill"
-            class="draggable"
-            draggable="true"
-            data-answer="true"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-xray"
-            src="images/x-ray.jpg"
-            alt="x-ray"
-            class="draggable"
-            draggable="true"
-            data-answer="true"
-          />
-        </div>
-        <div class="item-grid">
-          <img
-            id="item-cast"
-            src="images/cast.jpg"
-            alt="cast"
-            class="draggable"
-            draggable="true"
-            data-answer="true"
-          />
-        </div>
-      </section>
-    </main>
+    <p>
+      You wake up inside a deserted hospital.<br />Patients are waiting, and
+      their survival depends on your choices.
+    </p>
+    <button onclick="startGame()">Start Game</button>
     <script src="script.js"></script>
   </body>
 </html>
