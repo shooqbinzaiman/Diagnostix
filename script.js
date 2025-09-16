@@ -1,4 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+const goToCase = (caseNumber) => {
+  if (caseNumber === 1) {
+    window.location.href = "patient1.html"
+  } else if (caseNumber === 2) {
+    window.location.href = "patient2.html"
+  } else if (caseNumber === 3) {
+    window.location.href = "patient3.html"
+  } else {
+    console.log("Case not found")
+  }
+}
+const startGame = () => {
+  window.location.href = "cases.html"
+}
+
+const GoBack = () => {
+  window.location.href = "cases.html"
+}document.addEventListener("DOMContentLoaded", () => {
   items.forEach((item) => {
     item.addEventListener("dragstart", (event) => {
       event.dataTransfer.setData("text/plain", item.id)
