@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <audio controls autoplay>
+    <source src="audio/ballet.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Case 2 - Fainting Girl</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Case 2: Fainting Girl</h1>
+    <p>
+      A 6-year-old girl fainted during ballet practice. What should you check
+      first?
+    </p>
+
+    <main class="game-container">
+      <div>
+        <section class="patient-panel">
+          <img
+            src="images/fainted(ballet).png"
+            alt="fainted girl"
+            class="patient-ballet"
+          />
+        </section>
+
+        <section class="dropzone-panel">
+          <p>Drag the correct items here:</p>
+          <div class="dropzones">
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+            <div class="dropzone"></div>
+          </div>
+          <div id="message-box" class="message-box">Drag an item here</div>
+        </section>
+      </div>
+
+      <section class="items-panel">
+        <div class="item-grid">
+          <img
+            id="item-barbie"
+            src="images/barbie.jpg"
+            alt="barbie"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-milk"
+            src="images/milk.jpg"
+            alt="milk"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-ct"
+            src="images/ct.png"
+            alt="ct"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-bandage"
+            src="images/bandage.png"
+            alt="bandage"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-airway"
+            src="images/airway.png"
+            alt="airway"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-pulse"
+            src="images/pulse.jpg"
+            alt="pulse"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-sugar"
+            src="images/sugar.jpg"
+            alt="sugar"
+            class="draggable"
+            draggable="true"
+            data-answer="true"
+          />
+        </div>
+      </section>
+    </main>
+    <button onclick="history.back()">Go Back</button>
+    <script src="script.js"></script>
+  </body>
+</html>
