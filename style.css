@@ -14,7 +14,18 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
+.pic1 {
+  background-image: url("images/soccer.jpg");
+  background-size: cover;
+}
+.pic2 {
+  background-image: url("images/ballet.jpg");
+  background-size: cover;
+}
+.pic3 {
+  background-image: url("images/chest12.jpg");
+  background-size: cover;
+}
 h1 {
   color: white;
   font-size: 2.5rem;
