@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select a Case</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Choose a Patient Case</h2>
+    <p class="intro-text">
+      You wake up in a crowded hospital, where every second counts<br />Patients
+      are waiting, and their survival depends on your choices.<br />So choose a
+      Patient case to heal, Every correct case gives you 10 points!
+    </p>
+    <h2 id="score-display">Score: 0</h2>
+    <h2 id="victory-message"></h2>
     <div class="cases">
       <div class="case-box pic1" onclick="goToCase(1)">Soccer Injury</div>
+
       <div class="case-box pic2" onclick="goToCase(2)">Fainting Girl</div>
       <div class="case-box pic3" onclick="goToCase(3)">Chest Pain</div>
     </div>

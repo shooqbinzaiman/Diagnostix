@@ -7,14 +7,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Case 3 - Chest Pain</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script>
+      localStorage.removeItem("caseDone")
+    </script>
+    <h2 id="score-display">Score: 0</h2>
     <h1>Case 3: Chest Pain</h1>
     <p>
-      A 55-year-old man arrives with sudden chest pain. Which steps are
+      A 55-year-old man arrives with sudden chest pain. <br />Which steps are
       important
     </p>
 
@@ -102,6 +118,16 @@
         </div>
         <div class="item-grid">
           <img
+            id="item-sport"
+            src="images/sport.jpg"
+            alt="sport"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
+          />
+        </div>
+        <div class="item-grid">
+          <img
             id="item-heart-monitor"
             src="images/heart monitor.png"
             alt="heart-monitor"
@@ -114,5 +140,9 @@
     </main>
     <button onclick="history.back()">Go Back</button>
     <script src="script.js"></script>
+    <script>
+      document.getElementById("score-display").textContent =
+        "Score: " + getScore()
+    </script>
   </body>
 </html>

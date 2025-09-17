@@ -4,18 +4,34 @@
     <source src="audio/ballet.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Case 2 - Fainting Girl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <script>
+      localStorage.removeItem("caseDone")
+    </script>
+    <h2 id="score-display">Score: 0</h2>
     <h1>Case 2: Fainting Girl</h1>
     <p>
-      A 6-year-old girl fainted during ballet practice. What should you check
-      first?
+      A 6-year-old girl fainted during ballet practice.<br />
+      What should you check first?
     </p>
 
     <main class="game-container">
@@ -67,7 +83,7 @@
             alt="ct"
             class="draggable"
             draggable="true"
-            data-answer="wrong"
+            data-answer="true"
           />
         </div>
         <div class="item-grid">
@@ -87,7 +103,7 @@
             alt="airway"
             class="draggable"
             draggable="true"
-            data-answer="true"
+            data-answer="wrong"
           />
         </div>
         <div class="item-grid">
@@ -98,6 +114,16 @@
             class="draggable"
             draggable="true"
             data-answer="true"
+          />
+        </div>
+        <div class="item-grid">
+          <img
+            id="item-cotton"
+            src="images/cotton.jpg"
+            alt="cotton"
+            class="draggable"
+            draggable="true"
+            data-answer="wrong"
           />
         </div>
         <div class="item-grid">
@@ -114,5 +140,9 @@
     </main>
     <button onclick="history.back()">Go Back</button>
     <script src="script.js"></script>
+    <!-- <script>
+      document.getElementById("score-display").textContent =
+        "Score: " + getScore()
+    </script> -->
   </body>
 </html>

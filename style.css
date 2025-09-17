@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/131.jpg);
+  background-image: url(images/333.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,6 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
 .pic1 {
   background-image: url("images/soccer.jpg");
   background-size: cover;
@@ -26,21 +27,38 @@ body {
   background-image: url("images/chest12.jpg");
   background-size: cover;
 }
-h1 {
-  color: white;
-  font-size: 2.5rem;
+h2 {
+  color: black;
+  font-size: 2rem;
   margin: 20px 0;
   font-weight: bold;
 }
-
-h2 {
-  font-size: 2rem;
+h1 {
+  color: black;
+  font-size: 4rem;
   margin: 20px 0;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+}
+
+.intro-text {
+  font-family: "Cinzel", serif;
+  font-weight: bold;
 }
 
 p {
+  text-align: center;
+  align-items: center;
+  float: center;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  margin-top: 30px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
 }
 
 button {
@@ -63,6 +81,8 @@ button:hover {
   flex-wrap: wrap;
   margin-top: 40px;
   width: 750px;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
 }
 .case-box {
   color: black;
@@ -214,4 +234,10 @@ img {
   font-weight: bold;
   color: pink;
   text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+}
+#score-display {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
 }
