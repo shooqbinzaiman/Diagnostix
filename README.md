@@ -3,11 +3,11 @@
 ## Date: 11/09/2025
 
 ### By: Shooq Bin Zaiman
-##### wireframe
+##### Wireframe
 ![Wireframe](https://fv5-5.files.fm/thumb_show.php?i=juzsatr3pn&view&v=1&PHPSESSID=5b8a2e403717a87ac9a1ee7b933a45cc34920114
 )
 
-#### [GitHub](https://github.com/shooqbinzaiman/Diagnostix) |
+#### [GitHub](https://github.com/shooqbinzaiman/Diagnostix) | [Live Demo](https://shooqproject.surge.sh)
 ***
 
 ### ***Game overview***
