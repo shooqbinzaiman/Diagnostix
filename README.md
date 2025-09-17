@@ -1,11 +1,13 @@
 # Diagnostix
-# Shooq
-
+# Shooq BinZaiman
 ## Date: 11/09/2025
 
 ### By: Shooq Bin Zaiman
+##### wireframe
+![Wireframe](https://fv5-5.files.fm/thumb_show.php?i=juzsatr3pn&view&v=1&PHPSESSID=5b8a2e403717a87ac9a1ee7b933a45cc34920114
+)
 
-#### [Project wireframe]() |
+#### [GitHub](https://github.com/shooqbinzaiman/Diagnostix) |
 ***
 
 ### ***Game overview***
@@ -34,7 +36,7 @@
 - [ ] Read the patient's symptoms
 - [ ] Drag and drop the correct medical items
 - [ ] Heal the patient and unlock the next room
-- [ ] ~~Enjoy a mix of fun, challenge, and learning!
+- [ ] Enjoy a mix of fun, challenge, and learning!
 ***
 
 ### ***Credits***
@@ -42,4 +44,11 @@
 ##### Game Concept: Medical Escape Room by [Shooq Binzaiman]
 
 ##### Tools: HTML, CSS, JavaScript
+
+##### Wireframe to url conversion: [Files.fm](https://files.fm/f/juzsatr3pn)
+
+##### Draggable Functionality Reference: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API)
+
+##### Funny GIFs Source: [Tenor](https://tenor.com/search/medical-gifs)
+
 ***

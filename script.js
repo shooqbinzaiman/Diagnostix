@@ -1,4 +1,17 @@
-let score = 0
+let score = localStorage.getItem("score")
+  ? parseInt(localStorage.getItem("score"))
+  : 0
+
+const updateScore = () => {
+  const scoreDisplay = document.getElementById("score-display")
+  if (scoreDisplay) {
+    scoreDisplay.textContent = "Score: " + score
+  }
+  localStorage.setItem("score", score)
+}
+
+let win = document.querySelector(".win-text")
+let gif = document.querySelector(".gif")
 
 const goToCase = (caseNumber) => {
   if (caseNumber === 1) {
@@ -14,8 +27,11 @@ const goToCase = (caseNumber) => {
 
 const addScore = () => {
   score += 10
-  const scoreDisplay = document.querySelector("#score-display")
-  scoreDisplay.textContent = `Score: ${score}`
+  updateScore()
+  // const scoreDisplay = document.querySelector("#score-display")
+  // if (scoreDisplay) {
+  //   scoreDisplay.textContent = `Score: ${score}`
+  // }
 }
 
 const completedCase = () => {
@@ -25,23 +41,22 @@ const GoBack = () => {
   window.location.href = "cases.html"
 }
 document.addEventListener("DOMContentLoaded", () => {
+  updateScore()
   const items = document.querySelectorAll(".draggable")
   const dropZones = document.querySelectorAll(".dropzone")
   const messageBox = document.getElementById("message-box")
   const scoreDisplay = document.getElementById("score-display")
-  const victoryMessage = document.getElementById("victory-message")
+  // const victoryMessage = document.getElementById("victory-message")
 
-  // if (scoreDisplay) {
-  //   scoreDisplay.textContent = "Score: " + getScore()
-  // }
+  const restartBtn = document.getElementById("restart-button")
 
-  // if (victoryMessage) {
-  // if (ansArr.length >= 3) {
-  //   console.log("win")
-
-  //   victoryMessage.textContent = "Well done! You healed all patients!"
-  // }
-  // }
+  if (restartBtn) {
+    restartBtn.addEventListener("click", () => {
+      score = 0
+      localStorage.setItem("score", 0)
+      window.location.href = "index.html"
+    })
+  }
 
   if (!items.length || !dropZones.length || !messageBox) {
     return
@@ -83,11 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
           correctItemsDropped++
 
           if (correctItemsDropped == totalCorrectItems) {
-            if (!localStorage.getItem("caseDone")) {
-              messageBox.textContent =
-                "Well done! You earned 10 points! Click the Back button to heal the other cases DOC!"
-              localStorage.setItem("caseDone", "true")
-            }
+            // if (!localStorage.getItem("caseDone")) {
+            win.innerText =
+              "Well done! You earned 10 points! Click the Back button to heal the other cases DOC!"
+            gif.style.display = "block"
+            //   localStorage.setItem("caseDone", "true")
+            // }
           }
         } else {
           messageBox.textContent = "This box already has an item!"

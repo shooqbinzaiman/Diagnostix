@@ -241,3 +241,21 @@ img {
   font-family: "Cinzel", serif;
   font-weight: normal;
 }
+
+.gif {
+  width: 1500px;
+  height: 400px;
+  background-color: aliceblue;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  /* display: block; */
+  display: none;
+}
+
+.gif img {
+  width: 300px;
+  height: 300px;
+}
