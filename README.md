@@ -27,7 +27,7 @@
 
 ### ***Your medical adventure begins !***
 
-##### Each case includes 3 correct images and 4 distractors. Only the right combination will help the patient recover.
+##### Each case includes 3 correct images and 5 distractors. Only the right combination will help the patient recover.
 ***
 
 
