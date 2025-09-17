@@ -20,7 +20,6 @@ h1 {
   font-size: 2.5rem;
   margin: 20px 0;
   font-weight: bold;
-  /* margin-bottom: 10px; */
 }
 
 h2 {
@@ -41,13 +40,33 @@ button {
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
-  /* transition: 0.3; */
 }
 
 button:hover {
   background-color: darkred;
 }
-
+.cases {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 750px;
+}
+.case-box {
+  color: black;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.case-box:hover {
+  background: lightgray;
+}
 .game-container {
   display: flex;
   gap: 20px;
@@ -73,6 +92,22 @@ button:hover {
 img {
   width: 150px;
   height: 140px;
+  padding: 5px;
+}
+
+.patient-chest {
+  width: 1000px;
+  height: 800px;
+  padding: 5px;
+}
+.patient-soccer {
+  width: 1000px;
+  height: 800px;
+  padding: 5px;
+}
+.patient-ballet {
+  width: 1000px;
+  height: 800px;
   padding: 5px;
 }
 
@@ -141,6 +176,17 @@ img {
   justify-content: center;
   color: white;
   font-weight: bold;
+}
+
+.case-box {
+  width: 30%;
+  padding: 15px;
+}
+
+.content {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
 
 .symptom-text {
