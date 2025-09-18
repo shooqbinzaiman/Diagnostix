@@ -28,10 +28,6 @@ const goToCase = (caseNumber) => {
 const addScore = () => {
   score += 10
   updateScore()
-  // const scoreDisplay = document.querySelector("#score-display")
-  // if (scoreDisplay) {
-  //   scoreDisplay.textContent = `Score: ${score}`
-  // }
 }
 
 const completedCase = () => {
@@ -46,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const dropZones = document.querySelectorAll(".dropzone")
   const messageBox = document.getElementById("message-box")
   const scoreDisplay = document.getElementById("score-display")
-  // const victoryMessage = document.getElementById("victory-message")
 
   const restartBtn = document.getElementById("restart-button")
 
@@ -98,12 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
           correctItemsDropped++
 
           if (correctItemsDropped == totalCorrectItems) {
-            // if (!localStorage.getItem("caseDone")) {
             win.innerText =
               "Well done! You earned 10 points! Click the Back button to heal the other cases DOC!"
             gif.style.display = "block"
-            //   localStorage.setItem("caseDone", "true")
-            // }
           }
         } else {
           messageBox.textContent = "This box already has an item!"
