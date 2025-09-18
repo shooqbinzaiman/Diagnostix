@@ -36,7 +36,6 @@
 
 ![cases.html](https://fv5-5.files.fm/thumb_show.php?i=s7bfeu4yrd&view&v=1&PHPSESSID=5b8a2e403717a87ac9a1ee7b933a45cc34920114)
 
-![cases.html](https://fv5-5.files.fm/thumb_show.php?i=mwvgpub8my&view&v=1&PHPSESSID=5b8a2e403717a87ac9a1ee7b933a45cc34920114)
 
 ![cases.html](https://fv5-5.files.fm/thumb_show.php?i=mwvgpub8my&view&v=1&PHPSESSID=5b8a2e403717a87ac9a1ee7b933a45cc34920114)
 
